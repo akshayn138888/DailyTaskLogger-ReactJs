@@ -1,4 +1,23 @@
-.complete {
-  color: grey;
+.Todo {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin: 1em;
+  padding: 1.1 rem 3rem;
+  justify-content: s;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+.Todo-task-complete {
+  color: goldenrod;
   text-decoration: line-through;
+}
+.Todo-task {
+  color: white;
+  text-decoration: line-through;
+}
+.Todo button {
+  padding: 2px;
+  margin-left: auto;
 }

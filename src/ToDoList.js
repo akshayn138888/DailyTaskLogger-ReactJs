@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NewToDoForm from "./NewToDoForm";
 import Todo from "./Todo";
+import "./TodoList.css";
 class TodoList extends Component {
   constructor(props) {
     super(props);
@@ -56,8 +57,10 @@ class TodoList extends Component {
       );
     });
     return (
-      <div>
-        <h1>TodoList</h1>
+      <div className="TodoList">
+        <h1>
+          Daily Tasks<span> Add your tasks below:</span>
+        </h1>
         {todos}
         <NewToDoForm createTodo={this.create} />
       </div>
